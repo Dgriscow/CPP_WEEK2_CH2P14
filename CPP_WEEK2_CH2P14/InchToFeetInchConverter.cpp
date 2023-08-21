@@ -4,9 +4,9 @@ using namespace std;
 
 void InchToFeetInchConverter::converter() {
 
-	int height = 75;
-
-	//cin >> height;
+	int height;
+	cout << "Enter a Height Value You Wish To Convert: ";
+	cin >> height;
 
 	int heightFeet, heightRemainderInches;
 
