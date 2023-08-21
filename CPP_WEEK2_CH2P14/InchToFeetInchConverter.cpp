@@ -5,7 +5,9 @@ using namespace std;
 void InchToFeetInchConverter::converter() {
 
 	int height;
+
 	cout << "Enter a Height Value You Wish To Convert: ";
+
 	cin >> height;
 
 	int heightFeet, heightRemainderInches;
@@ -14,7 +16,19 @@ void InchToFeetInchConverter::converter() {
 	heightFeet = height / 12;
 	heightRemainderInches = height % 12;
 
-	cout << "Height: " << heightFeet << " Feet " << heightRemainderInches << " Inches";
+	if (heightRemainderInches != 1) {
+
+		cout << "Height: " << heightFeet << " Feet " << heightRemainderInches << " Inches";
+
+	}
+	else {
+
+		cout << "Height: " << heightFeet << " Feet " << heightRemainderInches << " Inch";
+
+	}
+
+		
+	
 
 	
 }
